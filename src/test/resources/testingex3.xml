@@ -1,0 +1,27 @@
+<suite name="GroupSuite">
+
+    <!-- 🔹 SMOKE FIRST -->
+    <test name="SmokeTests">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.exercise3"/>
+        </classes>
+    </test>
+
+    <!-- 🔹 THEN REGRESSION -->
+    <test name="RegressionTests">
+        <groups>
+            <run>
+                <include name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.exercise3"/>
+        </classes>
+    </test>
+
+</suite>
